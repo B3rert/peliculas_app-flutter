@@ -68,4 +68,12 @@ class Pelicula {
       return "https://image.tmdb.org/t/p/w500/$posterPath";
     }
   }
+
+  getBackgroundImage() {
+    if (posterPath == null) {
+      return "https://safetyaustraliagroup.com.au/wp-content/uploads/2019/05/image-not-found.png";
+    } else {
+      return "https://image.tmdb.org/t/p/w500/$backdropPath";
+    }
+  }
 }
